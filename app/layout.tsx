@@ -20,6 +20,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+
         {/* Google Analytics */}
         <Script
           async
@@ -33,7 +34,6 @@ export default function RootLayout({
             gtag('config', 'G-5ZNDZO9N1');
           `}
         </Script>
-      </body>
       </body>
     </html>
   );
