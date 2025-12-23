@@ -55,23 +55,32 @@ export default function HomePage() {
             How Helioriq Works
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <CapabilityCard
-              icon={<Activity className="h-6 w-6 text-brand" />}
-              title="Discover"
-              description="Identify critical systems, dependencies, and configuration risks within your cloud."
-            />
-            <CapabilityCard
-              icon={<Shield className="h-6 w-6 text-brand" />}
-              title="Analyze"
-              description="Assess reliability and security posture through AI-driven insights and scoring."
-            />
-            <CapabilityCard
-              icon={<Database className="h-6 w-6 text-brand" />}
-              title="Act"
-              description="Get prioritized recommendations to strengthen resilience and prevent outages."
-            />
-          </div>
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+  <MotionScrollReveal direction="left">
+    <CapabilityCard
+      icon={<Activity className="h-6 w-6 text-brand" />}
+      title="Discover"
+      description="Identify critical systems, dependencies, and configuration risks within your cloud."
+    />
+  </MotionScrollReveal>
+
+  <MotionScrollReveal direction="up" delay={0.2}>
+    <CapabilityCard
+      icon={<Shield className="h-6 w-6 text-brand" />}
+      title="Analyze"
+      description="Assess reliability and security posture through AI-driven insights and scoring."
+    />
+  </MotionScrollReveal>
+
+  <MotionScrollReveal direction="right" delay={0.4}>
+    <CapabilityCard
+      icon={<Database className="h-6 w-6 text-brand" />}
+      title="Act"
+      description="Get prioritized recommendations to strengthen resilience and prevent outages."
+    />
+  </MotionScrollReveal>
+</div>
+
         </section>
       </MotionFadeIn>
 
